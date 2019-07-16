@@ -3,7 +3,7 @@
   
   <groupId>com.mboatek.mKsms</groupId>
   <artifactId>librarymksms</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.1</version>
   
   <name>librarymksms</name>
   <description>library plateforme sms </description>
@@ -64,7 +64,7 @@
 			<localCheckout>true</localCheckout>
 			<pushChanges>false</pushChanges>
 			<mavenExecutorId>forked-path</mavenExecutorId>
-			<arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments>
+			<arguments>-Dgpg.passphrase=Sourisfromages9!</arguments>
 		</configuration>
 		<dependencies>
 			<dependency>
@@ -119,7 +119,7 @@
     	<connection>scm:git:git://github.com/mksms/mksms-java</connection>
     	<developerConnection>scm:git:git@github.com:mksms/mksms-java.git</developerConnection>
 		<url>https://github.com/mksms/mksms-java</url>
-		<tag>HEAD</tag>
+		<tag>0.1</tag>
 	</scm>
 	
 	<profiles>
