@@ -35,7 +35,7 @@
   <build>
   	<resources>
   		<resource>
-  			<directory>/home/aurelle/NS/divers/mboatek/projet/libraryJava/mksms-java</directory>
+  			<directory>/home/aurelle/NS/divers/mboatek/projet/libraryJava/mksms-java/</directory>
   			<includes>
   				<include>NOTICE*</include>
 				<include>LICENSE*</include>
