@@ -37,8 +37,6 @@ public class Client {
 	private static Client mInstance;
 	private String BASE_URL ="http://api.mksms.cm";
 	
-	private Client() {}
-	
 	private Client(String aPI_KEY, String aPI_HASH) {
 		super();
 		this.API_KEY = aPI_KEY;
@@ -106,7 +104,7 @@ public class Client {
 	/**
 	 * send a message on the server
 	 * @param message
-	 * @return boolean
+	 * @return boolean as result
 	 * @throws ClientProtocolException
 	 * @throws IOException*/
 	

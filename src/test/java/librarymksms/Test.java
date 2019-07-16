@@ -39,7 +39,7 @@ public class Test {
 	    date.setDate(Calendar.DAY_OF_MONTH);
 	    Response res = client.get_messages(date);
 	    JsonArray unexpected = new JsonArray();
-	    System.out.println(res.getData().toString());
+	    System.out.println(unexpected);
 	    assertNotEquals(unexpected, res.getData());
 	    
 	}
@@ -55,7 +55,6 @@ public class Test {
 	public void testConfirmVerification() throws ClientProtocolException, IOException {
 		
 		Response res = client.confirm_verification("691349146", "12345");
-		System.out.println(res.getSuccess());
 		assertTrue(res.getSuccess());
 	}
 	
@@ -63,7 +62,7 @@ public class Test {
 	@org.junit.Test
 	public void testConfirmVerification_fail() throws ClientProtocolException, IOException {
 		
-		Response res = client.confirm_verification("691349146", "3452");
+		Response res = client.confirm_verification("691349146", "5678");
 		assertFalse(res.getSuccess());
 		
 	}
