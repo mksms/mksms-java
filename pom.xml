@@ -32,8 +32,17 @@
 		<scope>test</scope>
 	</dependency>
   </dependencies>
-  
-  <plugins>
+  <build>
+  	<resources>
+  		<resource>
+  			<directory>/home/aurelle/NS/divers/mboatek/projet/libraryJava/mksms-java</directory>
+  			<includes>
+  				<include>NOTICE*</include>
+				<include>LICENSE*</include>
+  			</includes>
+  		</resource>
+  	</resources>
+   <plugins>
   	<plugin>
   		<artifactId>maven-deploy-plugin</artifactId>
 		<version>2.8.2</version>
@@ -80,19 +89,6 @@
 		<groupId>org.apache.maven.plugins</groupId>
 		<artifactId>maven-source-plugin</artifactId>
 		<version>3.0.1</version>
-		<executions>
-			<execution>
-				<id>attach-sources</id>
-				<goals>
-					<goal>jar</goal>
-				</goals>
-			</execution>
-		</executions>
-	</plugin>
-	<plugin>
-		<groupId>org.apache.maven.plugins</groupId>
-		<artifactId>maven-source-plugin</artifactId>
-		<version>2.10.4</version>
 		<configuration>
 			<encoding>UTF-8</encoding>
 		</configuration>
@@ -106,6 +102,7 @@
 		</executions>
 	</plugin>
   </plugins>
+ </build>
 	
 	<distributionManagement>
 		<snapshotRepository>
