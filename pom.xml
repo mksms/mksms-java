@@ -7,13 +7,31 @@
   
   <name>librarymksms</name>
   <description>library plateforme sms </description>
+  <url>https://github.com/mksms/mksms-java</url>
   <packaging>jar</packaging>
   
   <properties>
   	<maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
   </properties>
+   <licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
  
+	<developers>
+		<developer>
+			<name>aurelle youego</name>
+			<email>aurelleingrid832@gmail.com</email>
+			<organization>Mksms</organization>
+			<organizationUrl>https://github.com/mksms</organizationUrl>
+			<timezone>UTC+01:00</timezone>
+		</developer>
+	</developers>
+	
+	
   <dependencies>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
