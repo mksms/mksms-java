@@ -3,7 +3,7 @@
   
   <groupId>com.mboatek.mKsms</groupId>
   <artifactId>librarymksms</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.1</version>
   
   <name>librarymksms</name>
   <description>library plateforme sms </description>
