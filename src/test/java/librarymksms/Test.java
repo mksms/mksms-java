@@ -1,5 +1,6 @@
 package librarymksms;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
@@ -38,9 +39,7 @@ public class Test {
 		Date date = new Date();
 	    date.setDate(Calendar.DAY_OF_MONTH);
 	    Response res = client.get_messages(date);
-	    JsonArray unexpected = new JsonArray();
-	    System.out.println(unexpected);
-	    assertNotEquals(unexpected, res.getData());
+	    assertTrue(res.getSuccess());
 	    
 	}
 	
@@ -55,7 +54,7 @@ public class Test {
 	public void testConfirmVerification() throws ClientProtocolException, IOException {
 		
 		Response res = client.confirm_verification("691349146", "12345");
-		assertFalse(res.getSuccess());
+		assertTrue(res.getSuccess());
 	}
 	
 	

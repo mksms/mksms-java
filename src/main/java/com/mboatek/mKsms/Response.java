@@ -35,8 +35,8 @@ public class Response {
 	         if (response.has("cost")){
 	        	 this.coast = response.get("cost").getAsInt();
 	         }
-	         if(response.has("data")){
-	             this.data = response.getAsJsonArray("data");
+	         if(response.has("smses")){
+	             this.data = response.getAsJsonArray("smses");
 	         }
 	    }
 	    public boolean getSuccess() {
