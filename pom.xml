@@ -3,7 +3,7 @@
   
   <groupId>com.mboatek.mKsms</groupId>
   <artifactId>librarymksms</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.2</version>
   
   <name>librarymksms</name>
   <description>library plateforme sms </description>
@@ -137,7 +137,7 @@
     	<connection>scm:git:git://github.com/mksms/mksms-java</connection>
     	<developerConnection>scm:git:git@github.com:mksms/mksms-java.git</developerConnection>
 		<url>https://github.com/mksms/mksms-java</url>
-		<tag>0.1</tag>
+		<tag>0.2</tag>
 	</scm>
 	
 	<profiles>
